@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #f2f6ff;
+            font-family: Raleway, sans-serif;
+            margin: 0;
+
+        }
+
+        section {
+            padding: 30px 0px 50px 0px;
+
+        }
+
+
+        header {
+            display: flex;
+            padding: 16px 78px;
+            background-color: #fff;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        /* header start */
+        .logo .edyoda {
+            width: 130px;
+            font-size: 32px;
+            color: #0084ff;
+            font-weight: 900;
+            font-family: Raleway, sans-serif;
+        }
+
+        .logo .stories {
+            margin: 0;
+            font-weight: 500;
+            font-family: Raleway, sans-serif;
+            font-style: italic;
+        }
+
+        .categories .fa-solid {
+            padding-top: 0;
+            padding-left: 8px;
+        }
+
+        .categories {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        footer {
+            background-color: #172146;
+            padding: 80px 16%;
+            bottom: 0;
+
+        }
+
+        /* header end  */
+
+        /*items start */
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .items-block {
+            width: 33.3%;
+            margin: 15px;
+            box-shadow: 0px 0px 20px 2px #00000029;
+        }
+
+        .upper {
+            height: 176px;
+            width: 100%;
+        }
+
+        .upper img {
+            Width: 100%;
+            Height: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .lower {
+            padding: 10px 24px;
+            background-color: #fff;
+        }
+
+        .lower .text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.43;
+            color: rgba(0, 0, 0, .6);
+            margin: 4px 0
+        }
+
+        .lower .date {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            font-weight: 300
+        }
+
+        .title {
+            font-size: 18px;
+            text-align: left;
+            margin: 0;
+            font-weight: 600
+        }
+
+        .author-container {
+            padding-top: 4px
+        }
+
+        .author {
+            color: #0096ff;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500
+        }
+
+        .trending-post-title,
+        .filter-category,
+        .filter-category-list {
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .fa-filter  {
+           
+            color: #0084ff;
+            margin-right: 10px;
+        }
+
+        .category-list li {
+            padding: 6px 14px;
+            width: auto;
+            color: #0084ff;
+            border-radius: 15px;
+            border: 1px solid #0084ff;
+            margin: 5px;
+            cursor: pointer;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .category-list {
+            padding: 0px;
+        }
+
+       /*hover effect */
+        .category-list li:hover {
+            color: #fff;
+            background-color: #0084ff
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="edyoda">EDYODA</div>
+            <div class="stories">Stories</div>
+        </div>
+        <div class="categories">
+            Explore categories
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+    </header>
+    <section>
+        <div class="trending-post">
+            <div class="trending-post-title">
+                <h1>Trending Posts</h1>
+            </div><br />
+            <div class="filter-category">
+                <i class="fa-solid fa-filter"></i>
+                <span> <strong>Filter by Category</strong></span>
+            </div>
+
+            <div class="filter-category-list">
+                <ul class="category-list">
+                    <li>All</li>
+                    <li>Artificial intelligence</li>
+                    <li>Cloud Computing</li>
+                    <li>DevOps</li>
+                    <li>Programming Languages</li>
+                    <li>Mobile Application Devlepoment</li>
+                    <li>Technology and Tools</li>
+                    <li>Get a Job in a Tech Company</li>
+                    <li>Others</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="item-container">
+            <div class="items">
+                <div class="items-block">
+                    <div class="upper">
+                        <img
+                            src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Introduction to Machine Language</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">Machine learning (ML) is a type of artificial intelligence (AI) that allows
+                            software
+                            applications
+                            to become more accurate at predicting outcomes without being explicitly programmed to do so.
+                            Machine learning algorithms use historical data as input to predict new output values.</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">LAMP stack vs MEAN stack</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">LAMP refers to Linux Operating System, Apache, MySQL, PHP. 02. MEAN Stack
+                            Developer is an IT professional develops a web application using a collection of Java Script
+                            technologies i.e. MEAN. LAMP stack developer is an IT professional who develops web
+                            applications using Linux OS, Apache, MySQL, PHP i.e. LAMP.</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/4.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Impact of Cloud Computing on various Industries</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">In this sector, the major impact of cloud is in remote monitoring technologies.
+                            allowing doctors to keep an eye on distant patients. It uses bulk of data transfers
+                            alongside data integrations with an optimum speed to view live sessions and may require
+                            heavy servers, electrical consumption etc..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Challenges of Machine Learning</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text"> Major Challenges Faced By Machine Learning Professionals
+                            Poor Quality of Data. ...
+                            Underfitting of Training Data. ...
+                            Overfitting of Training Data. ...
+                            Machine Learning is a Complex Process. ...
+                            Lack of Training Data. ...
+                            Slow Implementation. ...
+                            Imperfections in the Algorithm When Data Grows.</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Breaking the myths around Cyber Security</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">Here are some of the top myths around cybersecurity and how you can address
+                            them.
+                            Cybersecurity isn't my responsibility. ...
+                            2. Hackers don't target small businesses. ...
+                            My passwords will keep me safe. ...
+                            A basic antivirus software will be enough to protect my business. ...
+                            We only need to protect against hackers..</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Importance of Data Backup</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">What is the importance of a data backup? The main reason for a data backup is to
+                            have a secure archive of your important information, whether that's classified documents for
+                            your business or treasured photos of your family, so that you can restore your device
+                            quickly and seamlessly in the event of data loss..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="items-block">
+                    <div class="upper">
+                        <img
+                            src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">What is Web Scraping</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">Web scraping is a technique to automatically extract content and data from
+                            websites using bots. It is also known as web data extraction or web harvesting..</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/what_is_isa_blog_1.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">What is Income Share Agreement</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">Income share agreement is a contract through which a student receives upfront
+                            money for higher education in exchange for a fixed percentage of her income after course
+                            completion..</p>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="upper">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/practical_machine_learning_1.png">
+                    </div>
+                    <div class="lower">
+                        <p class="title">Practical Machine Learning with Python and Keras</p>
+                        <div class="author-container">
+                            <span class="author">EdYoda</span> |
+                            <span class="date">11 June 2022</span>
+                        </div>
+                        <p class="text">Keras is a deep learning API written in Python, running on top of the machine
+                            learning platform TensorFlow. It was developed with a focus on enabling fast
+                            experimentation. Being able to go from idea to result as fast as possible is key to doing
+                            good research..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
